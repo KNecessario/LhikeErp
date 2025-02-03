@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <!--Font import Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></head>
+<body>
+    
+<!--Nav Bar-->
+<nav class="navbar navbar-expand-lg d-flex justify-content-between">
+    <a class="navbar-brand" href="#"> 
+        <img src="img/image.png" alt="logo">
+    </a>
+
+   
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">IT Services</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse w-100" id="navbarNav">
+        <div class="mx-auto d-flex justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="homepage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Release Note</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Documentation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--When the search bar on full scale will show the search bar but when the nav link proceed to menu burger it will hide the search bar-->
+    <!--full screen show logo left nav button middle right search bar-->
+    <div class="d-none d-lg-block">
+        <div class="group ml-auto">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                <g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g>
+            </svg>
+            <input placeholder="Search" type="search" class="input">
+        </div>
+    </div>
+</nav>
+
+
+<!--Home Page 2 side left and right on the left side have a 2 row and on the right side only 1 -->
+<div class="container-fluid  d-flex justify-content-center" style="height:1020px; background-image: url(img/wave.svg); background-repeat: no-repeat;">
+    <!--container center -->
+    <div class="container-fluid d-flex flex-row justify-content-center align-items-center" id="containerHome">
+        <div class="leftSide">
+            <h1>A software system that combines the functionalities of Logistics, Human Resource, Inventory, Kanban, and E- commerce into a single platform.</h1>
+            <button>See More</button>
+        </div>
+        <div class="rightSide">
+            <img src="img/homepage.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
+/**** Home ****/
+#containerHome{
+    width: 100%;
+    height: 90%;
+    margin-top: 60px;
+   
+}
+
+
+.leftSide{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0px 50px;
+  
+}
+.leftSide button{
+    width: 250px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--navbar-text-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.leftSide button:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.leftSide h1{
+    font-size: 36px;
+    color: var(--text-color);
+    font-weight: bold;
+    padding-top: 80px;
+    text-align: left;
+}
+
+.rightSide{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  
+    
+}
+
+.rightSide img{
+    /* responsive */
+    width: 400px;
+    height: 320px;
+    margin-top: 50px;
+
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    height: 1020px;
+    background-image: url('img/wave.svg');
+    background-repeat: no-repeat;
+}
+
+.containerHome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+   .container-fluid{
+    display: flex;
+    justify-content: center;
+    height: 1020px;
+    background-image: url('img/wave.svg');
+   }
+}

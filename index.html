@@ -1,245 +1,666 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fixed Navbar</title>
-    <link rel="icon" href="img/image.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="img/image.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/home.css" />
     <!--Font import Montserrat-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    
-<!--Nav Bar-->
-<nav class="navbar navbar-expand-lg d-flex justify-content-between">
-    <a class="navbar-brand" href="#"> 
-        <img src="img/image.png" alt="logo">
-    </a>
+  <body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+      <a class="navbar-brand" href="#">
+        <img src="img/image.png" alt="logo" />
+      </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
-    </button>
+      </button>
 
-    <div class="collapse navbar-collapse w-100" id="navbarNav">
+      <div class="collapse navbar-collapse w-100" id="navbarNav">
         <div class="mx-auto d-flex justify-content-center">
-            <ul class="nav nav-pills nav-fill">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Release Note</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Documentation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-            </ul>
+          <ul class="nav nav-pills nav-fill">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Release Note</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Documentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
         </div>
-    </div>
-    <!--When the search bar on full scale will show the search bar but when the nav link proceed to menu burger it will hide the search bar-->
-    <!--full screen show logo left nav button middle right search bar-->
-    <div class="d-none d-lg-block">
+      </div>
+      <!--When the search bar on full scale will show the search bar but when the nav link proceed to menu burger it will hide the search bar-->
+      <!--full screen show logo left nav button middle right search bar-->
+      <div class="d-none d-lg-block">
         <div class="group ml-auto">
-            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
-                <g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g>
-            </svg>
-            <input placeholder="Search" type="search" class="input">
+          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+            <g>
+              <path
+                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+              ></path>
+            </g>
+          </svg>
+          <input placeholder="Search" type="search" class="input" />
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-
-<!--Home Page 2 side left and right on the left side have a 2 row and on the right side only 1 -->
-<div class="container-fluid" id="containerfluid1">
-    <div class="container" id="layout1">
+    <!--Home Page 2 side left and right on the left side have a 2 row and on the right side only 1 -->
+    <div class="container-fluid" id="containerfluid1">
+      <div class="container" id="layout1">
         <div class="col-sm-6" id="side1">
-            <p>A software system that combines the functionalities of Logistics, Human Resource, Inventory, Kanban, and E- commerce into a single platform.</p>
-            <button type="button" class="btn btn-primary">See More</button>
+          <p>
+            A software system that combines the functionalities of Logistics,
+            Human Resource, Inventory, Kanban,and E-commerce into a single
+            platform.
+          </p>
+          <button type="button" class="btn btn-primary">See More</button>
         </div>
-        
-        
+
         <div class="col-sm-6" id="side2">
-            <img src="img/homepage.png" alt="">
+          <img src="img/homepage.png" alt="" />
         </div>
-
-        
+      </div>
     </div>
-</div>
 
-<!--Home Page 2-->
-<div class="container-fluid" id="containerfluid2">
-    <div class="container" id="layout2">
+    <!--Home Page 2-->
+    <div class="container-fluid" id="containerfluid2">
+      <div class="container" id="layout2">
         <div class="col-sm-6" id="side3">
-            <h1><span>Why</span> choose Like ERP?</h1>
-            <p>With LHIKE ERP, start-ups no longer need to purchase separate software for each operational areas, as everything is integrated into a single, comprehensive system. Its goal is to streamline processes, improve productivity, and provide real-time information and insights for informed decision-making. </p>
+          <h1><span>Why</span> choose Like ERP?</h1>
+          <p>
+            With LHIKE ERP, start-ups no longer need to purchase separate
+            software for each operational areas, as everything is integrated
+            into a single, comprehensive system. Its goal is to streamline
+            processes, improve productivity, and provide real-time information
+            and insights for informed decision-making.
+          </p>
         </div>
         <div class="col-sm-6" id="side4">
-           <img src="img/homepage2.png" alt="">
-           <p>Combines the functionalities of Logistics, Human Resource, Inventory, Kanban, and E-commerce into a single platform. It is designed specifically to help start-up companies efficiently manage their key operations. </p>
-           <button>Continue</button>
+          <img src="img/homepage2.png" alt="" />
+          <p>
+            Combines the functionalities of Logistics, Human Resource,
+            Inventory, Kanban, and E-commerce into a single platform. It is
+            designed specifically to help start-up companies efficiently manage
+            their key operations.
+          </p>
+          <button>Continue</button>
         </div>
+      </div>
     </div>
-</div>
 
-<!--We Offer-->
+    <!--We Offer-->
 
-<div class="container-fluid" id="containerfluid3">
-    <div class="container" id="layout3">
+    <div class="container-fluid" id="containerfluid3">
+      <div class="container" id="layout3">
         <h1>We Offer</h1>
-        <p>Explore our suite of tailored solutions crafted to address diverse business needs.</p>
+        <p>
+          Explore our suite of tailored solutions crafted to address diverse
+          business needs.
+        </p>
         <div class="container" id="grid-services">
-            <img src="img/services1.png" alt="">
-            <img src="img/services2.png" alt="">
-            <img src="img/services3.png" alt="">
-            <img src="img/services4.png" alt="">
-            <img src="img/services5.png" alt="">
-            <img src="img/services6.png" alt="">
+          <img src="img/services1.png" alt="" />
+          <img src="img/services2.png" alt="" />
+          <img src="img/services3.png" alt="" />
+          <img src="img/services4.png" alt="" />
+          <img src="img/services5.png" alt="" />
+          <img src="img/services6.png" alt="" />
         </div>
+      </div>
     </div>
-</div>
 
-<!--release note-->
-<div class="container" id="containerfluid4">
-    <div class="container" id="layout4">
+    <!--release note-->
+    <div class="container" id="containerfluid4">
+      <div class="container" id="layout4">
         <h1>Release Note</h1>
         <h3>Latest Release Note</h3>
         <div id="grid-latest">
-            
-            <div class="card" style="width: 14rem;">
-                <img class="card-img-top" src="img/ReleaseIcon.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Release 2.4.9</h5>
-                    <p class="card-text">November 27, 2024</p>
-                </div>
+          <div class="card" style="width: 14rem">
+            <img
+              class="card-img-top"
+              src="img/ReleaseIcon.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Release 2.4.9</h5>
+              <p class="card-text">November 27, 2024</p>
             </div>
+          </div>
 
-            <div class="card" style="width: 14rem;">
-                <img class="card-img-top" src="img/ReleaseIcon.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Release 2.4.9</h5>
-                    <p class="card-text">November 27, 2024</p>
-                </div>
+          <div class="card" style="width: 14rem">
+            <img
+              class="card-img-top"
+              src="img/ReleaseIcon.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Release 2.4.9</h5>
+              <p class="card-text">November 27, 2024</p>
             </div>
+          </div>
 
-            <div class="card" style="width: 14rem;">
-                <img class="card-img-top" src="img/ReleaseIcon.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Release 2.4.9</h5>
-                    <p class="card-text">November 27, 2024</p>
-                </div>
+          <div class="card" style="width: 14rem">
+            <img
+              class="card-img-top"
+              src="img/ReleaseIcon.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Release 2.4.9</h5>
+              <p class="card-text">November 27, 2024</p>
             </div>
+          </div>
         </div>
         <h3>Previous Release Note</h3>
         <div id="grid-previous">
-            <div class="card" style="width: 14rem;">
-                <img class="card-img-top" src="img/ReleaseIcon.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Release 2.4.9</h5>
-                    <p class="card-text">November 27, 2024</p>
-                </div>
+          <div class="card" style="width: 14rem">
+            <img
+              class="card-img-top"
+              src="img/ReleaseIcon.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Release 2.4.9</h5>
+              <p class="card-text">November 27, 2024</p>
             </div>
+          </div>
 
-            <div class="card" style="width: 14rem;">
-                <img class="card-img-top" src="img/ReleaseIcon.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Release 2.4.9</h5>
-                    <p class="card-text">November 27, 2024</p>
-                </div>
+          <div class="card" style="width: 14rem">
+            <img
+              class="card-img-top"
+              src="img/ReleaseIcon.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Release 2.4.9</h5>
+              <p class="card-text">November 27, 2024</p>
             </div>
+          </div>
 
-            <div class="card" style="width: 14rem;">
-                <img class="card-img-top" src="img/ReleaseIcon.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Release 2.4.9</h5>
-                    <p class="card-text">November 27, 2024</p>
-                </div>
+          <div class="card" style="width: 14rem">
+            <img
+              class="card-img-top"
+              src="img/ReleaseIcon.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Release 2.4.9</h5>
+              <p class="card-text">November 27, 2024</p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-
-<div class="container-fluid" id="containerfluid5">
-    <!--Documentation-->
-    <div class="container" id="layout5">
+    <div class="container-fluid" id="containerfluid5">
+      <!--Documentation-->
+      <div class="container" id="layout5">
         <h1>Documentation</h1>
 
         <h3>Documentation</h3>
-        
+
         <div id="carouselExampleControls" class="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card">
-                        <div class="img-wrapper"><img src="img/documentationIco.png" class="d-block w-100" alt="..."> </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
                 </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper"><img src="img/documentationIco.png" class="d-block w-100" alt="..."> </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 2</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
                 </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper"><img src="img/documentationIco.png" class="d-block w-100" alt="..."> </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 3</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper"><img src="img/documentationIco.png" class="d-block w-100" alt="..."> </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 4</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper"><img src="img/documentationIco.png" class="d-block w-100" alt="..."> </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 5</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- E Commerce-->
+        <h3>E-commerce Module</h3>
+        <div id="ecommerceCarousel" class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#ecommerceCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#ecommerceCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <h3>Finance Module</h3>
+        <div id="financeCarousel" class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#financeCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#financeCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <h3>Pancake Module</h3>
+        <div id="pancakeCarousel" class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="img/documentationIco.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#pancakeCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#pancakeCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
 
 
@@ -247,53 +668,142 @@
 
 
 
-
+      </div>
     </div>
-</div>
 
-
-
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script>
-    var multipleCardCarousel = document.querySelector(
-  "#carouselExampleControls"
-);
-if (window.matchMedia("(min-width: 768px)").matches) {
-  var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-    interval: false,
-  });
-  var carouselWidth = $(".carousel-inner")[0].scrollWidth;
-  var cardWidth = $(".carousel-item").width();
-  var scrollPosition = 0;
-  $("#carouselExampleControls .carousel-control-next").on("click", function () {
-    if (scrollPosition < carouselWidth - cardWidth * 4) {
-      scrollPosition += cardWidth;
-      $("#carouselExampleControls .carousel-inner").animate(
-        { scrollLeft: scrollPosition },
-        600
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+      var multipleCardCarousel = document.querySelector(
+        "#carouselExampleControls"
       );
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+          interval: false,
+        });
+        var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+        var cardWidth = $(".carousel-item").width();
+        var scrollPosition = 0;
+        $("#carouselExampleControls .carousel-control-next").on(
+          "click",
+          function () {
+            if (scrollPosition < carouselWidth - cardWidth * 4) {
+              scrollPosition += cardWidth;
+              $("#carouselExampleControls .carousel-inner").animate(
+                { scrollLeft: scrollPosition },
+                600
+              );
+            }
+          }
+        );
+        $("#carouselExampleControls .carousel-control-prev").on(
+          "click",
+          function () {
+            if (scrollPosition > 0) {
+              scrollPosition -= cardWidth;
+              $("#carouselExampleControls .carousel-inner").animate(
+                { scrollLeft: scrollPosition },
+                600
+              );
+            }
+          }
+        );
+      } else {
+        $(multipleCardCarousel).addClass("slide");
+      }
+
+      var multipleCardCarousel2 = document.querySelector("#ecommerceCarousel");
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        var carousel = new bootstrap.Carousel(multipleCardCarousel2, {
+          interval: false,
+        });
+        var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+        var cardWidth = $(".carousel-item").width();
+        var scrollPosition = 0;
+        $("#ecommerceCarousel .carousel-control-next").on("click", function () {
+          if (scrollPosition < carouselWidth - cardWidth * 4) {
+            scrollPosition += cardWidth;
+            $("#ecommerceCarousel .carousel-inner").animate(
+              { scrollLeft: scrollPosition },
+              600
+            );
+          }
+        });
+        $("#ecommerceCarousel .carousel-control-prev").on("click", function () {
+          if (scrollPosition > 0) {
+            scrollPosition -= cardWidth;
+            $("#ecommerceCarousel .carousel-inner").animate(
+              { scrollLeft: scrollPosition },
+              600
+            );
+          }
+        });
+      } else {
+        $(multipleCardCarousel2).addClass("slide");
+      }
+
+      var multipleCardCarousel3 = document.querySelector("#financeCarousel");
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        var carousel = new bootstrap.Carousel(multipleCardCarousel3, {
+          interval: false,
+        });
+        var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+        var cardWidth = $(".carousel-item").width();
+        var scrollPosition = 0;
+        $("#financeCarousel .carousel-control-next").on("click", function () {
+          if (scrollPosition < carouselWidth - cardWidth * 4) {
+            scrollPosition += cardWidth;
+            $("#financeCarousel .carousel-inner").animate(
+              { scrollLeft: scrollPosition },
+              600
+            );
+          }
+        });
+        $("#financeCarousel .carousel-control-prev").on("click", function () {
+          if (scrollPosition > 0) {
+            scrollPosition -= cardWidth;
+            $("#financeCarousel .carousel-inner").animate(
+              { scrollLeft: scrollPosition },
+              600
+            );
+          }
+        });
+      } else {
+        $(multipleCardCarousel3).addClass("slide");
+      }
+
+      /**pancake module */
+    var multipleCardCarousel4 = document.querySelector("#pancakeCarousel");
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      var carousel = new bootstrap.Carousel(multipleCardCarousel4, {
+        interval: false,
+      });
+      var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+      var cardWidth = $(".carousel-item").width();
+      var scrollPosition = 0;
+      $("#pancakeCarousel .carousel-control-next").on("click", function () {
+        if (scrollPosition < carouselWidth - cardWidth * 4) {
+          scrollPosition += cardWidth;
+          $("#pancakeCarousel .carousel-inner").animate(
+            { scrollLeft: scrollPosition },
+            600
+          );
+        }
+      });
+      $("#pancakeCarousel .carousel-control-prev").on("click", function () {
+        if (scrollPosition > 0) {
+          scrollPosition -= cardWidth;
+          $("#pancakeCarousel .carousel-inner").animate(
+            { scrollLeft: scrollPosition },
+            600
+          );
+        }
+      });
+    } else {
+      $(multipleCardCarousel4).addClass("slide");
     }
-  });
-  $("#carouselExampleControls .carousel-control-prev").on("click", function () {
-    if (scrollPosition > 0) {
-      scrollPosition -= cardWidth;
-      $("#carouselExampleControls .carousel-inner").animate(
-        { scrollLeft: scrollPosition },
-        600
-      );
-    }
-  });
-} else {
-  $(multipleCardCarousel).addClass("slide");
-}
-</script>
-</body>
+    
+    </script>
+  </body>
 </html>
-

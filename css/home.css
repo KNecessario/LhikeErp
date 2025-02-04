@@ -319,7 +319,7 @@ body{
 
 #layout3 h1 {
     color: var(--text-color);
-    font-weight: 800;
+    font-weight: bold;
     font-size: 3.3rem;
 }
 

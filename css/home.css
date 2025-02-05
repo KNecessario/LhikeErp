@@ -461,7 +461,6 @@ input:hover {
   font-weight: bold;
 }
 
-
 #layout5 h3 {
   color: var(--text-color);
   text-align: left;
@@ -528,6 +527,25 @@ input:hover {
 }
 
 .carousel-item .card .img-wrapper {
-    object-fit: contain;
-    
-  }
+  object-fit: contain;
+}
+
+/**About Us**/
+
+#containerfluid6 {
+  width: 100%;
+  background-color: yellowgreen;
+  height: fit-content;
+}
+
+#layout6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 95%;
+  height: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+  background-color:yellowgreen;
+}
